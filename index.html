@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Complete Tutorial</title>
 </head>
+
 <body>
-    <h1>hy</h1>>
+    <!--Style is attribute <p> is tag name --->
+    <p id="link" style="color: red;">This is content</p>
+    <h1>I Am Heading one</h1>
+    <h2>I Am Heading two</h2>
+    <h3>I Am Heading three</h3>
+    <h4>I Am Heading four</h4>
+    <h5>I Am Heading five</h5>
+    <h6>I Am Heading six</h6>
+    <hr />
+    <p>Hello I Am <b>Paragraph</b> <em>Lorem</em> ipsum dolor sit amet, <br /> <strong> adipisicing elit</strong>.
+        <u>Underline hu m</u> Fugiat, impedi
+        <i>italic hu m</i> voluptatibus similique atque <small>beatae possimus nemo vitae velit ipsam deleniti</small>,
+        quaerat explicabo perferendis
+        dignissimos commodi sapiente et, <del>deleteddd</del> nam <ins>inserteddd</ins> quidem <mark>quia</mark> .
+    </p>
+    <pre>Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit.
+        Praesentium dignissi        Ipsum odio obca
+        ecati quas!</pre>
+    Co<sub>2</sub>
+    Co<sup>2</sup><br>
+
+    <q>This Is Said By This Person Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque laudantium cupiditate
+        sunt ducimus quisquam consectetur magni magnam reiciendis rerum aspernatur molestiae ad quaerat corporis, eius
+        aliquam doloribus nihil. Voluptate, iste</q>
+
+    <blockquote cite="https://www.google.com">This Is Said By This Person Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Atque laudantium cupiditate sunt ducimus quisquam consectetur magni magnam reiciendis rerum
+        aspernatur molestiae ad quaerat corporis, eius aliquam doloribus nihil. Voluptate, iste</blockquote>
+
+    <abbr title="Multi National Companies">MNC</abbr>
+    <address>New Delhi</address>
+    <cite>The jungle book</cite> is wriiten y ..........<br><br>
+
+    <a href="https://www.google.com" target="_blank" title="go to google">Go to Google</a><br><br>
+    <a href="#link">link</a>
+    <a href="mailto:abc@example.com?subject = Feedback&body = Message">Send Feedback</a>
+
+    <hr>
+    <img src="a.jpg" alt="logo" width="100" height="100" />
+
+    <marquee direction="right">Moving Text</marquee>
+
+        <ol start="10" type="I">
+            <li>Items one
+                <ol>
+                    <li>LIst in list</li>
+                    <li>one list can contain other LIst in list</li>
+                </ol>
+            </li>
+            <li>Items Two
+                <ul>
+                    <li>ol can contain ul also</li>
+                    <li>ul can contain ol also</li>
+                    <li>It is called Nested lists</li>
+                </ul>
+            </li>
+        </ol>
+        <ul style="list-style: square;">
+            <li>Items one</li>
+            <li>Items Two</li>
+        </ul>
+        <dl>
+            <dt>Item One Title</dt>
+                <dd>Item One DEscription</dd>
+            <dt>Item Two Title</dt>
+                <dd>Item Two Description</dd>
+        </dl>
+
+        <!--Old Table writing Style-->
+        <table border="1">
+            <caption>My Table</caption>
+            <tr>
+                <th>head1</th>
+                <td>Data1</td>
+            </tr>
+            <tr>
+                <th>head2</th>
+                <td>Data2</td>
+            </tr>
+        </table>
+
+        <!--New Table-->
+        <table border="1">
+            <caption>Mine Table</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Study</th>
+                    <th>Nested Table</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tanu</td>
+                    <td>20</td>
+                    <td>Female</td>
+                    <td rowspan="3">Programmin</td>
+                    <td rowspan="2">
+                        <table border="1">
+                            <tr>
+                                <th>new Table</th>
+                                <th>new2</th>
+                            </tr>
+                            <tr>
+                                <td>data1</td>
+                                <td>data2</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>mk</td>
+                    <td colspan="2">80 Male h</td>
+                </tr>
+                <tr>
+                    <td>Tani</td>
+                    <td>90</td>
+                    <td>Female</td>
+                    <td>hy</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Study</th>
+                    <th>Nested Table</th>
+                </tr>
+            </tfoot>
+        </table>
+        <div style="background-color: aqua;">hello div is block level elements</div>
+        <span style="background-color: brown;"> Hello Span is inline Element</span><br>
+
+        <iframe src="https://www.ndtv.com/" frameborder="1" height="200" width="200"></iframe>
+
+        <!--Two Ways To add audio-->
+        <!--first Way-->
+        <audio controls src="sound.mp3">Your Browser Does Not Support Audio</audio>
+
+        <!--Second Way-->
+        <audio controls>
+            <source src="sound.mp3" type="audio/mpeg">
+            Your Browser Does Not Support Audio
+        </audio>
+
+        <!--Two Ways To Add Video-->
+        <video width="400" height="400" controls src="video.mp4">Your Browser Does Not Support Video</video>
+         <!--Second Way-->
+         <video controls width="100" height="200">
+            <source src="video.mp4" type="video/mp4">
+            Your Browser Does Not Support Audio
+        </video>
+
+        <!--Embed PDF-->
+        <iframe src="pdf.pdf" width="300" height="300"></iframe>
+        <embed src="pdf.pdf" width="300" height="300" type="application/pdf">
+        <object data="pdf.pdf" width="300" height="300" type="application/pdf"></object>
+
+        <!--embed Youtube Video--->
+        <iframe width="300" height="300" src="https://www.youtube.com/embed/YmGzIwfOCg8?start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YmGzIwfOCg8?controls=0&amp;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!--Embed Map-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.6974870514855!2d74.84091841446963!3d24.461278767165407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396673a714942403%3A0xaf8ebcf2ddc9de6f!2sSUCCESS%20COACHING%20BAGHANA!5e0!3m2!1sen!2sin!4v1619707850347!5m2!1sen!2sin" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <p>I Need A Space &nbsp; &nbsp; &nbsp; HERE</p>
+        <p>I also need A space &#160; &#160; &#160; &#160; &#160; &#160; &#160;  &#160; Here</p>
+        <p>PROPORTION  symbols is &#8759;</p>
+        <h2>Emoji: &#128514; </h2>
 </body>
 </html>

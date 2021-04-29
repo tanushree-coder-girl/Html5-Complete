@@ -60,8 +60,228 @@
     g. <big>I am Big</big>
     h. <mark>I can Marked THe text</mark>
     i. <del>I am Deleted</del>
-    j. <ins>I am newly inserted</ins>
+    j. <ins>I am newly inserted also underlined</ins>
     k. <sub>I am Sub Value --- Down</sub>
     l. <sup> I am super Value ----Up</sup>
 
-9. 
+9. Quotation And Citation
+    a. <q>write quote here</q>  => it output comes in " quote "
+    b. <blockquote cite="https://www.google.com">Quote By others </blockquote>  => show without quote align set 
+    c. <abbr title="general knowledge">GK</abbr> => Short form of words
+    d. <address>neemuch</address> => for write address
+    e. <cite>Book Name </cite>  => for write book name etc.
+
+10. Html Links
+    for example => 
+            <a href="https://www.google.com"> Google </a>                     => Links open in same tab
+            <a href="https://www.google.com" target=_blank> Google </a>       => Links open in new tab
+            <a href="#About" title="go where id is about"> Same Page Scroll </a> => title is used to show title on link
+
+    for Example Email Links-:
+            <a href="mailto:xyz@gmail.com"> go on email </a> => Email link without Subject
+            <a href="mailto:xyz@gmail.com?subject=hello"> go on email </a> => Email link with Subject
+
+11. Image
+    for example => 
+        <img src="imgPathAndName.jpg" alt="logo" width="100" height="100" />  => Self closing Tag
+
+12. Marquee Tag
+    Note   => THis tag is removed in html5
+        <marquee direction="left/right/up/down">Moving Text</margqee>
+
+13. Lists In HTML
+    One list Can Contain Another list Also it is called nested lists.
+    There are three type of lists in html-
+    a. Ordered List
+    b. Unordered List
+    c. Description List
+
+    a. Ordered List Example=>
+        <ol start="50" type="I">
+            <li>Items one</li>
+            <li>Items Two</li>
+        </ol>
+
+        note: 1. start is used to start counting where we want 
+            2. type is used to set type of list like => a , A , I , i , 1
+                        a = > small a 
+                        A = > Capital A 
+                        I => Capital Roman Number 
+                        i => small roman Number
+                        1 => counting 1
+
+    b.UnOrdered List Example=>
+         <ul style="list-style-type:none">
+            <li>Items one</li>
+            <li>Items Two</li>
+        </ul>
+
+        note: 1. Style is used to set type of list items and its styling
+        2. style="list-style-type : disc , circle, square, none" 
+        3. also use style="list-style:none;"  => By default is desc
+        4. Full form of li is list items
+
+    c. Description List Example=>
+        <dl>
+            <dt>Item One Title</dt>
+                <dd>Item One DEscription</dd>
+            <dt>Item Two Title</dt>
+                <dd>Item Two Description</dd>
+        </dl>
+
+        note=> 1. full form of dl is Description list 
+        2. dt is Description title
+        3. dd is description list item Description 
+
+14. Table
+    1. One table Can Contain Another table and this is called Nested Table. 
+    2. A table Has rows And columns 
+    3. <th> for table Heading
+    4. <td> for table data
+    5. <tr> for Table Rows 
+    6. Table border="1" for give border to table 
+    7. caption for write table title
+    8. rowspan="2" rowspan for combine rows 
+    9. colspan="2" colspan for combine columns 
+    10. <thead> <tbody> <tfoot> is new in html5 for clarification of heading body and footer in table .
+    11. <tfoot> is not compulsory to write
+    12. We can also put Image, Input box , other Table in Table Data <td>
+
+    for example=> 
+        <table border="1">
+            <caption>Table Title</caption>
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>Lastname</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td rowspan="2">Doe</td>     => Ex of rowspan TAble
+                </tr>
+                <tr>
+                    <td colspan="2">Miny</td>    => Ex of colspan TAble
+                </tr>
+                <tr>
+                    <td>Sharma</td>
+                </tr>
+                <tr>
+                    <td><img src="demo.jpg" alt="demo"></td>   => Ex of img in TAble
+                    <td><input type="text"></td>                 => Ex of input box in TAble
+                </tr>
+                 <tr>
+                    <td>
+                        <table border="1">           => Ex of Nested TAble
+                            <tr>
+                                <th>Name:</th>
+                                <td>abhi</td>
+                            </tr>
+                             <tr>
+                                <th>Age:</th>
+                                <td>12</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>dubai</td>
+                </tr>
+            </tbody>
+            <tfoot>   => Ex of Tfoot in TAble
+                <tr>
+                    <th>FirstName</th>
+                    <th>Lastname</th>
+                </tr>
+            </tfoot>
+        </table>
+
+15. Block level Elements <div> And Inline Elements <span>
+    block level Elements always start with new line and takes 100% width
+    Inline Elements takes only width which content wants and does not start on new line
+
+    example of block level Elements Are=> 
+        <div>, <address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>, <figcaption>, <figure> , <footer>, <form>, <h1> to <h6> , <header>, <hr>, <li>, <main>,  <nav> , <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>
+
+    example of Inline Elements Are=>
+        <a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>, <dfn>, <em>, <i>, <img>, <input>, <kbd>, <label>, <map>, <object>, <output>, <q> , <samp>, <scrpit>, <select>, <span>, <small>, <strong> , <sup>, <sub>, <textarea>, <time>, <tt>, <var>
+
+16. Iframe 
+    It is used to put someone website in our webpage
+        <iframe src="https://www.google.com/" frameborder="1" height="500" width="1000"></iframe>
+
+17. Html Audio And Video
+    There Are Two Ways To add audio
+        1. <audio controls src="sound.mp3">Your Browser Does Not Support Audio</audio>
+        2. <audio controls>
+            <source src="sound.mp3" type="audio/mpeg">
+            Your Browser Does Not Support Audio
+        </audio>
+            We Can Find More Type of song Using Chrome or google Search.
+
+     There Are Two Ways To add Video
+        1. <video controls src="video.mp4">Your Browser Does Not Support Video</video>
+        2. <video controls autoplay width="1000" height="500">
+            <source src="video.mp4" type="audio/mpeg">
+            Your Browser Does Not Support video
+        </video>
+            We Can Find More Type of video Using Chrome or google Search.
+
+18. Embed PDF
+    There Are Three Ways To add PDF
+        a. iframe 
+        b. embed
+        c. object 
+        for example=> 
+            <iframe src="pdf.pdf" width="1000" height="500"></iframe>
+            <embed src="pdf.pdf" width="1000" height="500" type="application/pdf">
+            <object data="pdf.pdf" width="1000" height="500" type="application/pdf"></object>
+    
+19. Embed Youtube Video
+    Firstly go to youtube.com 
+    now choose video then click on share 
+    now choose embed 
+    code is written there then copy and paste <iframe> code
+
+20. Embed Google map
+    firstly go on https://www.google.com/maps 
+    Then search place Which you want Place
+    Then share Then Embed A Map 
+    THen choose Custom size And size You want 
+    Then Copy Iframe And Paste 
+    You can cHange Height Width According To your need
+
+30. HTML Entities & Html Symbols & Html Emojis
+    There are two typed of these entities one is name and other is number
+    for example 
+        &name; => &nbsp; => for White Spaces	
+        &#number; => &#160; => for White Spaces
+
+        Reference sites for Html Entities-
+            https://dev.w3.org/html5/html-author/charref
+            https://www.w3schools.com/html/html_entities.asp
+    
+        Reference Sites For Html Symbols 
+            https://www.w3schools.com/html/html_symbols.asp
+    
+        Reference Sites For Html Emojis
+            https://www.w3schools.com/html/html_emojis.asp
+            https://www.w3schools.com/charsets/ref_emoji_smileys.asp
+
+31. Semantic Elements
+    semantic Elements Are Which Clearly Defined It meaning 
+    for example->
+        1. <article>
+        2. <aside> or <sidebar>
+        3. <details>
+        4. <figcaption>
+        5. <figure>
+        6. <footer>
+        7. <header>
+        8. <main>
+        9. <mark>
+        10. <nav>
+        11. <section>
+        12. <summary>
+        13. <time>
+
+32. HTML Image Maps
