@@ -1,0 +1,67 @@
+-------------HTML5 From Beginer To Advanced----------
+
+1. Introduction 
+    Html is Hyper text markup language.
+    It is Structure of Any Web page.
+    File name must be saved with a extension named as index.html 
+
+2. Basic Structure
+
+    <! DOCTYPE html>              <----- It shows Type of Document you can check more DOCTYPE in chrome-------->
+    <html lang="en">               
+        <head>
+            All Meta Tags is wriiten here
+            <title>My Website</title>
+        </head>
+        <body>
+            All Content Goes Here
+        </body>
+    </html>
+
+    note=> The structure should be indentated.                                                    ----
+    indentation is neccessary part of html. for Example=>  the structore above written is indented ||
+
+3. Tagname/ Elements And Content And Attributes 
+    for example=>  <p style="">This is content</p> 
+    In this <p> is Tagname/Element or style is attribute and the part written in middle is content.
+
+4. Html Comments
+    It is piece of code which cannnot displayed on dom. it is used for better understanding of code for future use.
+    for example=>    <!---Hello I Am Comment--->
+
+5. Headings And Paragraph 
+    <h1>I Am Heading one</h1>
+    <h2>I Am Heading two</h2>
+    <h3>I Am Heading three</h3>
+    <h4>I Am Heading four</h4>
+    <h5>I Am Heading five</h5>
+    <h6>I Am Heading six</h6>
+
+    <p>Hello I Am Paragraph</p>
+
+6. line Break And Horizontal line
+    <br />   --------This is used for breaking line at any point . it is self closing tag
+    <hr />   --------This is To Draw A horizontal line After Any Element. It is Also self closing Tag.
+
+7. Pre Tag
+    <pre>
+        Pre Tag shows
+        The Html As   We Write 
+        as We write it shows same.
+    </pre>
+
+8. Formatting Tags 
+    a. <b>I am Bold</b>
+    b. <strong> I Am Also Bold used in html5 </strong>
+    c. <i>I am Italic</i>
+    d. <em>I am Also Italic used in html5 </em>
+    e. <u>I can underlined the text</u>
+    f. <small> I am Small </small>
+    g. <big>I am Big</big>
+    h. <mark>I can Marked THe text</mark>
+    i. <del>I am Deleted</del>
+    j. <ins>I am newly inserted</ins>
+    k. <sub>I am Sub Value --- Down</sub>
+    l. <sup> I am super Value ----Up</sup>
+
+9. 
