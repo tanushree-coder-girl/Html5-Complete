@@ -285,3 +285,198 @@
         13. <time>
 
 32. HTML Image Maps
+    this method is used to redirect image in more than one url based on different area. 
+    for example=> 
+        <img src="demo.jpg" alt="demo" usemap="#demo">
+        <map name="demo">
+            <area shape="rect" coords="34, 44, 270, 350" href="https://www.google.com">
+            <area shape="rect" coords="290, 172, 333, 250" href="https://www.facebook.com">
+        </map>
+
+        Note=> 1. There Are 3 TYpes of sHapes 
+                    a. Rectangle -> rect -> it Has 4 Coords
+                    b. circle -> circle => It Has 3 Coords
+                    c. Polygon -> polygon -> It Has so many Coords Depends on area selected
+    
+        Search on Google => image map generator
+        go to => https://imagemap.org/
+        now select image 
+        Then select area via circle, rectangle , or polygon as you want 
+        and give title and href to them 
+        now copy html Generated output and paste code.
+
+33. Html Forms 
+    1. Form must be written in form Tag for example=>
+    by default method is Get and action is on # means same page.
+        <form method="GET/POST" action="test.php"> 
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="Enter Name" name="fname"/>
+            <input type="submit" Value="submit Form" />
+        </form>
+
+    2. Form Input Types Are as Under-
+        type =  "text" , "submit", "color", "date", "email", "hidden", "number", "password", "reset", "time", "url", "range", "file", "image"
+
+        note=> File=> if we are using input type="file" multiple then we have to use =>
+        <form enctype="multipart/form-data"> 
+        <input type="file" multiple> =multiple attribute is for select multiple file.
+
+        if we are using range then we should add min and max attribute for example => 
+        <input type="range" min="10" max="20" />
+
+    3. Input box Attributes
+        value="you can write default value"
+        readonly (this is used for inut box which we do not want to change the value)
+        disabled (input box is disabled)
+        size="50" (input box size)
+        maxlength="20" (length of character written in box)
+        required (compulsory field to fill)
+        placeholder="Enter Name" (hint for user what to write in box)
+        autofocus (automatically cursor blink on input box)
+        autocomplete="on/off" (suggestions)
+        name="fname" (it is used for give them name mostly used in backend purpose)
+
+        Attributes which can only used with type="number" or "range" or "date"
+            min="10" max="20"
+            value="1" step="2"  => step means it increase with 2 time as 1 to 3
+
+    4. Textarea And Image button
+        <textarea cols="30" rows="20">Hello...(this is default value)</textarea>  => it is not used value attribute
+        <input type="image" src="btn.jpg" width="100">
+            image is also type of submit button using image
+
+    5. SELECT Options
+        <select multiple>                 => multiple is used for select multiple options
+            <option label="Select"></option>
+            <option value="boy">Boy</option>
+            <option value="girl">Girl</option>
+        </select>
+
+         <select size="2">             => Size is used to displayed more than one option
+            <option value="boy">Boy</option>
+            <option selected value="girl">Girl</option>   =>selected is used for selected option by default
+        </select>
+
+        If We Want To Make Group For Example=>
+        <select>
+            <optgroup label="fruits">
+                <option value="apple">Apple</option>
+                <option value="mango">Mango</option>
+            </optgroup>
+        </select>
+
+    6. Radio buttons
+        Rules=> Name attribute is compulsory And must Be Same....
+        for choose One Value
+        use Checked For by Default Checked
+            <input type="radio" name="gender" value="male" checked><span>Male</span>
+            <input type="radio" name="gender" value="female"><span>female</span>
+
+    7. Check boxes
+        Rules=> Name attribute is compulsory And must Be Same....
+        for choose multiple Values
+        use Checked For by Default Checked
+            <input type="checkbox" name="favColor" value="red"><span>Red</span>
+            <input type="checkbox" name="favColor" value="yellow"><span>yellow</span>
+
+    8. Datalist
+        This is used for Show Suggestion On Search box for example 
+        datalist id must be same with list attribute in input box
+            <input type="search" id="search" list=""searchBox>
+            <datalist id="searchBox">
+                <option value="apple">
+                <option value="mango">
+                <option value="orange">
+            </datalist>
+
+    9. Label fieldset And Legend 
+        </form>
+            <fieldset>   => Draw A Border
+                <legend>Personal details</legend>   => Used As Form Heading
+                <div>
+                    <label for="name"> Name </label>   => for attribute of label And id of input box must be same
+                    <input type="text" id="name">    
+                </div>
+            </fieldset>
+        </form>
+
+34. SEO (Search Engine Optimization)
+    This Tag Must Be used In Head Part as 
+        <head>
+                <all Meta tags and link must br written here>
+        </head>
+
+    1. Responsive For different Devices
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    2. Title
+    <title>Title is show in front corner of website at top</title>
+
+    3. Description
+    <meta name="description" content="This description is shown in chrome shwn someone search your website">
+
+    4. Keywords
+    <meta name="keywords" content="portfolio, Personal portfolio">
+
+    5. Canoncial URL should be set up if you have two pages of similar content on your website or if you have content on your site that is also used on another site. 
+    <link rel="canonical" href="https://sameweb.com" />
+
+    6. Robots Meta Tag is used to control how search engines crawl and index the URL.
+    <meta name="robots" content="noindex, nofollow"> 
+    <meta name="robots" content="index, follow"> 
+
+35. Favicon Icon
+    It is shown in top with title a icon
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    For Comparatable with all Browsers
+    Go to Google And Search Favicon Generator
+    or go to https://realfavicongenerator.net/
+    Choose Your icon Then Click on Generate Your FAvicons And Html Code
+    now copy all links and paste in your code
+    Then Download Your package As Favicon Package Button
+    Now Extract Zip file And use
+
+36. Style Tag
+  There are two ways 
+  internal and External 
+  internal 
+    <style>
+        css goes here
+    </style>
+  external 
+    <link rel="stylesheet" href="style.css">
+
+37. Script And No script Tag
+There are two ways 
+  internal and External 
+  internal 
+    <script>
+        javascript goes here
+    </script>
+  external 
+    <script src="script.js"></script>
+
+38. Open Graph And Twitter Card Tag
+    when You share Your website on facebook and Twitter then its Shows What should be seen in card there
+    Facebook Open Graph Tag  => Search On Google
+    https://developers.facebook.com/docs/sharing/webmasters/
+    copy code and paste in head
+    Now Change Content
+    
+    Twitter Open Graph Tag => Search On Google
+    https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#started
+    code copy and paste in Heading
+    now Change content except Summary
+
+39. Right To left Website 
+    Use dir in html tag for example 
+    <html dir="rtl">  => by default is ltr
+
+40. W3C Standards Html Validation 
+    Go On google then search html validator
+    click on https://validator.w3.org/
+    Now Validate By Direct Input 
+    Then Copy And paste Your code And Check
+
+--------------------------------------------------------------------------------------------------------------------

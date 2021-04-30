@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+<!--rtl From right to left-->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--title tag-->
     <title>HTML5 Complete Tutorial</title>
+
+    <!--description tag-->
+    <meta name="description" content="Hello this is description of our website">
+
+    <!--keyword-->
+    <meta name="keywords" content="portfolio, Personal portfolio">
+
+    <!--canonical -->
+    <link rel="canonical" href="samepage.html" />
+
+    <!--robots-->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!--Favicon Icon-->
+    <!-- <link rel="shortcut icon" href="a.jpg" type="image/x-icon">-->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        /*  body{
+            background-color: bisque;
+        }  */
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+       // alert('hello');
+    </script>
+    <script src="script.js"></script>
+    <noscript>Your Browser Does not Support Javascript</noscript>
+
+    <!--Facebook Open Graph Card Tag-->
+    <meta property="og:url" content="https://www.google.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="my website" />
+    <meta property="og:description" content="My website Description" />
+    <meta property="og:image" content="a.jpg" />
+
+    <!--Twitter Open Graph Card Tag-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="https://www.google.com" />
+    <meta name="twitter:creator" content="@tanu" />
+    <meta property="og:url" content="https://www.google.com/" />
+    <meta property="og:title" content="My website" />
+    <meta property="og:description" content="My website description" />
+    <meta property="og:image" content="a.jpg" />
+
 </head>
 
 <body>
@@ -52,135 +109,290 @@
 
     <marquee direction="right">Moving Text</marquee>
 
-        <ol start="10" type="I">
-            <li>Items one
-                <ol>
-                    <li>LIst in list</li>
-                    <li>one list can contain other LIst in list</li>
-                </ol>
-            </li>
-            <li>Items Two
-                <ul>
-                    <li>ol can contain ul also</li>
-                    <li>ul can contain ol also</li>
-                    <li>It is called Nested lists</li>
-                </ul>
-            </li>
-        </ol>
-        <ul style="list-style: square;">
-            <li>Items one</li>
-            <li>Items Two</li>
-        </ul>
-        <dl>
-            <dt>Item One Title</dt>
-                <dd>Item One DEscription</dd>
-            <dt>Item Two Title</dt>
-                <dd>Item Two Description</dd>
-        </dl>
+    <ol start="10" type="I">
+        <li>Items one
+            <ol>
+                <li>LIst in list</li>
+                <li>one list can contain other LIst in list</li>
+            </ol>
+        </li>
+        <li>Items Two
+            <ul>
+                <li>ol can contain ul also</li>
+                <li>ul can contain ol also</li>
+                <li>It is called Nested lists</li>
+            </ul>
+        </li>
+    </ol>
+    <ul style="list-style: square;">
+        <li>Items one</li>
+        <li>Items Two</li>
+    </ul>
+    <dl>
+        <dt>Item One Title</dt>
+        <dd>Item One DEscription</dd>
+        <dt>Item Two Title</dt>
+        <dd>Item Two Description</dd>
+    </dl>
 
-        <!--Old Table writing Style-->
-        <table border="1">
-            <caption>My Table</caption>
+    <!--Old Table writing Style-->
+    <table border="1">
+        <caption>My Table</caption>
+        <tr>
+            <th>head1</th>
+            <td>Data1</td>
+        </tr>
+        <tr>
+            <th>head2</th>
+            <td>Data2</td>
+        </tr>
+    </table>
+
+    <!--New Table-->
+    <table border="1">
+        <caption>Mine Table</caption>
+        <thead>
             <tr>
-                <th>head1</th>
-                <td>Data1</td>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Study</th>
+                <th>Nested Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tanu</td>
+                <td>20</td>
+                <td>Female</td>
+                <td rowspan="3">Programmin</td>
+                <td rowspan="2">
+                    <table border="1">
+                        <tr>
+                            <th>new Table</th>
+                            <th>new2</th>
+                        </tr>
+                        <tr>
+                            <td>data1</td>
+                            <td>data2</td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
             <tr>
-                <th>head2</th>
-                <td>Data2</td>
+                <td>mk</td>
+                <td colspan="2">80 Male h</td>
             </tr>
-        </table>
+            <tr>
+                <td>Tani</td>
+                <td>90</td>
+                <td>Female</td>
+                <td>hy</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Study</th>
+                <th>Nested Table</th>
+            </tr>
+        </tfoot>
+    </table>
+    <div style="background-color: aqua;">hello div is block level elements</div>
+    <span style="background-color: brown;"> Hello Span is inline Element</span><br>
 
-        <!--New Table-->
-        <table border="1">
-            <caption>Mine Table</caption>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Gender</th>
-                    <th>Study</th>
-                    <th>Nested Table</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Tanu</td>
-                    <td>20</td>
-                    <td>Female</td>
-                    <td rowspan="3">Programmin</td>
-                    <td rowspan="2">
-                        <table border="1">
-                            <tr>
-                                <th>new Table</th>
-                                <th>new2</th>
-                            </tr>
-                            <tr>
-                                <td>data1</td>
-                                <td>data2</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>mk</td>
-                    <td colspan="2">80 Male h</td>
-                </tr>
-                <tr>
-                    <td>Tani</td>
-                    <td>90</td>
-                    <td>Female</td>
-                    <td>hy</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Gender</th>
-                    <th>Study</th>
-                    <th>Nested Table</th>
-                </tr>
-            </tfoot>
-        </table>
-        <div style="background-color: aqua;">hello div is block level elements</div>
-        <span style="background-color: brown;"> Hello Span is inline Element</span><br>
+    <iframe src="https://www.ndtv.com/" frameborder="1" height="200" width="200"></iframe>
 
-        <iframe src="https://www.ndtv.com/" frameborder="1" height="200" width="200"></iframe>
+    <!--Two Ways To add audio-->
+    <!--first Way-->
+    <audio controls src="sound.mp3">Your Browser Does Not Support Audio</audio>
 
-        <!--Two Ways To add audio-->
-        <!--first Way-->
-        <audio controls src="sound.mp3">Your Browser Does Not Support Audio</audio>
+    <!--Second Way-->
+    <audio controls>
+        <source src="sound.mp3" type="audio/mpeg">
+        Your Browser Does Not Support Audio
+    </audio>
 
-        <!--Second Way-->
-        <audio controls>
-            <source src="sound.mp3" type="audio/mpeg">
-            Your Browser Does Not Support Audio
-        </audio>
+    <!--Two Ways To Add Video-->
+    <video width="400" height="400" controls src="video.mp4">Your Browser Does Not Support Video</video>
+    <!--Second Way-->
+    <video controls width="100" height="200">
+        <source src="video.mp4" type="video/mp4">
+        Your Browser Does Not Support Audio
+    </video>
 
-        <!--Two Ways To Add Video-->
-        <video width="400" height="400" controls src="video.mp4">Your Browser Does Not Support Video</video>
-         <!--Second Way-->
-         <video controls width="100" height="200">
-            <source src="video.mp4" type="video/mp4">
-            Your Browser Does Not Support Audio
-        </video>
+    <!--Embed PDF-->
+    <iframe src="pdf.pdf" width="300" height="300"></iframe>
+    <embed src="pdf.pdf" width="300" height="300" type="application/pdf">
+    <object data="pdf.pdf" width="300" height="300" type="application/pdf"></object>
 
-        <!--Embed PDF-->
-        <iframe src="pdf.pdf" width="300" height="300"></iframe>
-        <embed src="pdf.pdf" width="300" height="300" type="application/pdf">
-        <object data="pdf.pdf" width="300" height="300" type="application/pdf"></object>
+    <!--embed Youtube Video--->
+    <iframe width="300" height="300" src="https://www.youtube.com/embed/YmGzIwfOCg8?start=60"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YmGzIwfOCg8?controls=0&amp;"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
-        <!--embed Youtube Video--->
-        <iframe width="300" height="300" src="https://www.youtube.com/embed/YmGzIwfOCg8?start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YmGzIwfOCg8?controls=0&amp;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Embed Map-->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.6974870514855!2d74.84091841446963!3d24.461278767165407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396673a714942403%3A0xaf8ebcf2ddc9de6f!2sSUCCESS%20COACHING%20BAGHANA!5e0!3m2!1sen!2sin!4v1619707850347!5m2!1sen!2sin"
+        width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-        <!--Embed Map-->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.6974870514855!2d74.84091841446963!3d24.461278767165407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396673a714942403%3A0xaf8ebcf2ddc9de6f!2sSUCCESS%20COACHING%20BAGHANA!5e0!3m2!1sen!2sin!4v1619707850347!5m2!1sen!2sin" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>I Need A Space &nbsp; &nbsp; &nbsp; HERE</p>
+    <p>I also need A space &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; Here</p>
+    <p>PROPORTION symbols is &#8759;</p>
+    <h2>Emoji: &#128514; </h2>
 
-        <p>I Need A Space &nbsp; &nbsp; &nbsp; HERE</p>
-        <p>I also need A space &#160; &#160; &#160; &#160; &#160; &#160; &#160;  &#160; Here</p>
-        <p>PROPORTION  symbols is &#8759;</p>
-        <h2>Emoji: &#128514; </h2>
+    <!---semantic elements layout are-->
+    <header>
+        <nav>
+            <h1>logo</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat temporibus sequi minima aliquam eum,
+                qui quas accusantium soluta voluptates quae eveniet nemo ipsa sunt minus nisi harum error impedit ea?
+            </article>
+            <aside>
+                This is Aside Area
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>2020-2021 Copyright</p>
+    </footer>
+
+    <!--html Map image-->
+    <img src="a.png" usemap="#image_map">
+    <map name="image_map">
+        <area alt="facebook" title="Google" href="https://www.google.com" coords="136,225,461,447" shape="rect">
+        <area alt="facebook" title="facebook" href="https://www.facebook.com" coords="1068,71,76" shape="circle">
+        <area alt="Clouds" title="Clouds" href="https://imagemap.org/"
+            coords="506,114 583,126 664,165 664,165 694,124 575,15 575,15 575,15 575,15 575,15 386,36 386,36 386,36 521,208 664,167 664,167 664,167 664,167 664,167 659,138 659,138 659,138 659,138 659,138 659,138 659,138 659,138 659,138 659,138 659,138 659,138 659,138 659,138 647,146 647,146 647,146 657,136 657,136 657,136 657,136 657,136 773,50 497,227 692,91 692,91 692,91 692,91 692,91 690,89 556,315 573,71 573,71 573,71 573,71 573,71 577,72 568,69 568,69 568,69 568,69 652,208 "
+            shape="polygon">
+    </map>
+
+    <!--Html Form-->
+    <form method="GET" action="" enctype="multipart/form-data">
+        <div>
+            name: <input type="text" value="tanushree" readonly placeholder="Enter Your First?Name">
+            last name: <input type="text" value="" size="50" maxlength="20" placeholder="Enter Your Lastname" autofocus
+                autocomplete="off">
+        </div>
+        <div>
+            color: <input type="color" name="color">
+        </div>
+        <div>
+            Date: <input type="date" required>
+        </div>
+        <div>
+            email: <input type="email" value="xyz@gmail.com" disabled>
+        </div>
+        <div>
+            number: <input type="number" min="1" max="10" step="2" value="1">
+        </div>
+        <div>
+            password: <input type="password">
+        </div>
+        <div>
+            hidden: <input type="hidden" value="alreadySet">
+        </div>
+        <div>
+            time: <input type="time">
+        </div>
+        <div>
+            url: <input type="url">
+        </div>
+        <div>
+            range: <input type="range" min="1" max="10">
+        </div>
+        <div>
+            file: <input type="file" multiple>
+        </div>
+        <input type="reset">
+        <input type="submit" value="SubmitForm">
+        <input type="image" width="100" src="a.jpg">
+
+        <textarea name="note" id="note" cols="30" rows="20">Hello.....</textarea>
+    </form><br />
+
+    <form>
+        <select>
+            <option value="mango">Mango</option>
+            <option value="Apple" selected>Apples</option>
+        </select>
+        <select multiple size="2">
+            <optgroup label="Fruits">
+                <option value="mango">Mango</option>
+                <option value="Apple">Apples</option>
+            </optgroup>
+            <optgroup label="Color">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+            </optgroup>
+        </select>
+
+        <input type="radio" name="gender" value="male" checked>:Male
+        <input type="radio" name="gender" value="female">:Female
+        <br>
+
+        <input type="checkbox" name="sports" value="cricket">:cricket
+        <input type="checkbox" name="sports" value="football">:football
+        <input type="checkbox" name="sports" value="hockey">:hockey
+    </form>
+    <form>
+        <!--Datalist-->
+        <input type="text" name="search" id="search" list="searchBar">
+        <datalist id="searchBar">
+            <option value="Apple">
+            <option value="Boy">
+            <option value="Cat">
+            <option value="Dog">
+        </datalist>
+
+        <!--Label-->
+        <label for="name">FirstName</label>
+        <input type="text" name="name" id="name" autocomplete="off">
+
+        <!--FieldSet And Legends-->
+        <fieldset>
+            <legend>Basic Information</legend>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="mob">Mobile Number</label>
+                <input type="number" name="mob" id="mob">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>More Information</legend>
+            <div>
+                <label for="age"> age</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div>
+                <label for="sex">sex</label>
+                <input type="text" name="sex" id="sex">
+            </div>
+        </fieldset>
+    </form>
+
+    <br /><br /><br /><br /><br />
 </body>
+
 </html>
