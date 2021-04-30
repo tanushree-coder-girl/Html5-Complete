@@ -457,6 +457,9 @@ There are two ways
   external 
     <script src="script.js"></script>
 
+    noscript
+        <noscript> If your Browser Does Not Support javascript Then show this </noscript>
+
 38. Open Graph And Twitter Card Tag
     when You share Your website on facebook and Twitter then its Shows What should be seen in card there
     Facebook Open Graph Tag  => Search On Google
